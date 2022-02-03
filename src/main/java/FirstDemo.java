@@ -2,7 +2,7 @@ public class FirstDemo {
 
     public static void main(String[] args) {
         welcome();
-        demoConcatenatie();
+        demoConcatenation();
         System.out.println("Einde programma");
     }
 
@@ -10,7 +10,7 @@ public class FirstDemo {
         System.out.println("Hallo trainees!");
     }
 
-    public static void demoConcatenatie() {
+    public static void demoConcatenation() {
         System.out.println("Dit is een tekst " + ", een lange tekst!");
     }
 }
