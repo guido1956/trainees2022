@@ -3,8 +3,16 @@ public class FirstDemo {
     public static void main(String[] args) {
         // welcome();
        //  demoConcatenation();
-        demoVariables();
+       // demoVariables();
+        String completeName = demoConcatenationWithParams("Jan", "Janssen");
+        System.out.println(completeName);
         System.out.println("Einde programma");
+    }
+
+
+    public static String demoConcatenationWithParams(String firstName, String lastName ) {
+        String fullName = firstName + " " + lastName;
+        return fullName;
     }
 
     public static void demoVariables() {
