@@ -1,8 +1,8 @@
 public class FirstDemo {
 
     public static void main(String[] args) {
-        welcome();
-        demoConcatenation();
+        // welcome();
+       //  demoConcatenation();
         demoVariables();
         System.out.println("Einde programma");
     }
@@ -22,6 +22,4 @@ public class FirstDemo {
     public static void demoConcatenation() {
         System.out.println("Dit is een tekst " + ", een lange tekst!");
     }
-
-
 }
