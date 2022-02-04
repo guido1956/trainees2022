@@ -8,7 +8,8 @@ public class FirstDemo {
         //demoArithmetic();
       //  System.out.println(completeName);
         // demoIf();
-        demoGenesteIf();
+       // demoGenesteIf();
+        demoRelationeleOperatoren();
         System.out.println("Einde programma");
     }
 
@@ -32,6 +33,12 @@ public class FirstDemo {
         itRains = false;
         System.out.println("Gelukkig het regent niet");
         actionForWalkingOutside(itRains);
+    }
+
+    public static void demoRelationeleOperatoren() {
+        boolean itRains = true;
+        double temperature  = 17; //varieer naar hartelust
+        actionForWalkingOutside( itRains, temperature);
     }
 
     public static void demoGenesteIf() {
@@ -62,6 +69,32 @@ public class FirstDemo {
                 System.out.println("Trek gewone jas aan");
             }
         }
+    }
+
+    public static void actionForWalkingOutside(boolean itRains, double temperature) {
+       if (itRains) {
+           System.out.println("Blijf thuis");
+           return;
+       }
+       if (temperature > 40.0) {
+           System.out.println("Blijf thuis");
+           return;
+       }
+
+       if (temperature >= 25) {
+           System.out.println("Draag zomerkleding");
+           if (temperature > 30) {
+               System.out.println("Neem zwemkleding mee");
+
+           }
+       } else {
+           if (temperature == 0.00) {
+               System.out.println("Doe test of ijs buiten smelt of niet");
+           }
+           if (temperature < 15) {
+               System.out.println("Trek jas aan");
+           }
+       }
     }
 
 
