@@ -40,8 +40,8 @@ public class FirstDemo {
         System.out.println("Wat jammer, het regent en het is koud");
         actionForWalkingOutside(itRains, outsideTemperatureAbove15);
         itRains = false;
-        System.out.println("Gelukkig het regent niet");
-        actionForWalkingOutside(itRains);
+        System.out.println("Gelukkig het regent niet, maar het is wel koud");
+        actionForWalkingOutside(itRains, outsideTemperatureAbove15);
     }
 
     public static void actionForWalkingOutside(boolean itRains) {
