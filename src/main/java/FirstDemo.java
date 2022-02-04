@@ -4,8 +4,9 @@ public class FirstDemo {
         // welcome();
        //  demoConcatenation();
        // demoVariables();
-        String completeName = demoConcatenationWithParams("Jan", "Janssen");
-        System.out.println(completeName);
+       // String completeName = demoConcatenationWithParams("Jan", "Janssen");
+        demoArithmetic();
+      //  System.out.println(completeName);
         System.out.println("Einde programma");
     }
 
@@ -29,5 +30,10 @@ public class FirstDemo {
 
     public static void demoConcatenation() {
         System.out.println("Dit is een tekst " + ", een lange tekst!");
+    }
+
+    public static void demoArithmetic() {
+        System.out.println(4 + 5 + 12 % 6 * 3 /9);
+
     }
 }
