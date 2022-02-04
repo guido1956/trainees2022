@@ -7,7 +7,8 @@ public class FirstDemo {
        // String completeName = demoConcatenationWithParams("Jan", "Janssen");
         //demoArithmetic();
       //  System.out.println(completeName);
-        demoIf();
+        // demoIf();
+        demoGenesteIf();
         System.out.println("Einde programma");
     }
 
@@ -33,12 +34,33 @@ public class FirstDemo {
         actionForWalkingOutside(itRains);
     }
 
+    public static void demoGenesteIf() {
+        boolean itRains = true;
+        boolean outsideTemperatureAbove15 = false;
+        System.out.println("Wat jammer, het regent en het is koud");
+        actionForWalkingOutside(itRains, outsideTemperatureAbove15);
+        itRains = false;
+        System.out.println("Gelukkig het regent niet");
+        actionForWalkingOutside(itRains);
+    }
+
     public static void actionForWalkingOutside(boolean itRains) {
         if (itRains) {
             System.out.println("Neem paraplu mee");
             System.out.println("Trek een regenjas aan");
         } else {
             System.out.println("Trek gewone jas aan");
+        }
+    }
+
+    public static void actionForWalkingOutside(boolean itRains, boolean isWarm) {
+        if (itRains) {
+            System.out.println("Neem paraplu mee");
+            System.out.println("Trek een regenjas aan");
+        } else {
+            if (!isWarm) {
+                System.out.println("Trek gewone jas aan");
+            }
         }
     }
 
