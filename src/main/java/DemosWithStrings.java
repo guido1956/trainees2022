@@ -27,7 +27,10 @@ public class DemosWithStrings {
         } else {
             System.out.println("De waarden van de twee variabelen zijn NIET gelijk");
         }
+        if (text3.equals(text4)) {
+            System.out.println("De waarden van de twee variabelen zijn gelijk");
+        } else {
+            System.out.println("De waarden van de twee variabelen zijn NIET gelijk");
+        }
     }
-
-
 }
