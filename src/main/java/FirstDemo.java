@@ -9,8 +9,24 @@ public class FirstDemo {
       //  System.out.println(completeName);
         // demoIf();
        // demoGenesteIf();
-        demoRelationeleOperatoren();
+       // demoRelationeleOperatoren();
+        demoIntandDouble();
         System.out.println("Einde programma");
+    }
+
+    public static void demoIntandDouble() {
+        int number1 = 12;
+        int number2 = 24;
+        System.out.println(number1 + number2);
+
+        double number3 = 12;
+        double number4 = 24;
+        System.out.println(number3 + number4);
+
+        // int kan wel toegekend worden aan een double, anders om kan niet
+        double number5 = number1 + number2;
+        // number1 = number5 + 1 //dit kan niet!!!
+        System.out.println(number5);
     }
 
 
@@ -36,8 +52,8 @@ public class FirstDemo {
     }
 
     public static void demoRelationeleOperatoren() {
-        boolean itRains = true;
-        double temperature  = 17; //varieer naar hartelust
+        boolean itRains = false;
+        double temperature  = 0.0; //varieer naar hartelust
         actionForWalkingOutside( itRains, temperature);
     }
 
