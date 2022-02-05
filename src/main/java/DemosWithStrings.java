@@ -1,6 +1,21 @@
+import java.util.Locale;
+
 public class DemosWithStrings {
     public static void main(String[] args) {
         demoIsIsIsDangerousWithObjects();
+        demoMethodsString();
+    }
+
+    public static void demoMethodsString() {
+        String myText = "Hello World";
+        System.out.println(myText.toUpperCase());  //HELLO WORLD
+        System.out.println(myText);  //Hello World, object is niet gewijzigd.
+        System.out.println(myText.substring(6));  // World  vanaf positie 6 tot einde
+        System.out.println(myText.substring(6,8)); //Wo  van positie 6 TOT positie 8
+        System.out.println(myText.toUpperCase().substring(6,8)); // WO
+
+        myText = myText.toUpperCase(); // oorspronkelijk object wordt gedelete en een nieuwe wordt aangemaakt
+        System.out.println(myText);  //HELLO WORLD
     }
 
     public static void demoIsIsIsDangerousWithObjects() {
