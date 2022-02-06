@@ -52,8 +52,17 @@ public class DemoScanner {
 
     public static int inputValue(String message) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println(message);
-        int input = scanner.nextInt();  // method om gehele getallen in te lezen
+        boolean isInputCorrect = false;
+        int input = 0;
+        do {
+            System.out.println(message);
+            try {
+                 input = scanner.nextInt();  // method om gehele getallen in te lezen
+                isInputCorrect = true;
+            } catch(Exception e ) {
+                System.out.println("U dient een geheel getal in te voeren");
+            }
+        } while (!isInputCorrect);
         return input;
     }
 
