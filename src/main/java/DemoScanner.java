@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class DemoScanner {
     public static void main(String[] args) {
-        demoScanner1();
+        // demoScanner1();
+        demoScanner2();
     }
 
     public static void demoScanner1() {
@@ -11,6 +12,17 @@ public class DemoScanner {
         String lastname = inputTekst("Wat is de achternaam?");
         int  age = inputValue("Wat is de leeftijd?");
         printFullName(firstName, insertion, lastname);
+
+    }
+
+    public static void demoScanner2() {
+        for (int i = 1; i <=3 ; i++) {
+            String firstName = inputTekst("Wat is de voornaam?");
+            String insertion = inputTekst("Wat is het tussenvoegsel? [Enter] als er geen tussenvoegsel is");
+            String lastname = inputTekst("Wat is de achternaam?");
+            int age = inputValue("Wat is de leeftijd?");
+            printFullName(firstName, insertion, lastname);
+        }
 
     }
 
